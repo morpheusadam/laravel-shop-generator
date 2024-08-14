@@ -1,6 +1,7 @@
-# FleetCart - Laravel Ecommerce CMS
+![Installation Complete](public/Documentation/4.png)
+# Laravel Shop Generator - Laravel Ecommerce CMS
 
-FleetCart is a powerful and feature-rich Ecommerce CMS built with Laravel. It provides a comprehensive solution for creating and managing an online store with ease.
+Laravel Shop Generator is a powerful and feature-rich Ecommerce CMS built with Laravel. It provides a comprehensive solution for creating and managing an online store with ease.
 
 ## Features
 
@@ -41,15 +42,59 @@ FleetCart is a powerful and feature-rich Ecommerce CMS built with Laravel. It pr
 ### Step 1: Extract and Upload
 
 1. Unzip the downloaded archive package.
-2. Rename the `FleetCart` directory to your desired directory name.
+2. Rename the `Laravel Shop Generator` directory to your desired directory name.
 3. Upload the directory to your web server through FTP or Control Panel.
 
 ### Step 2: Creating Database
 
-1. Create a database for FleetCart through your server control panel.
+1. Create a database for Laravel Shop Generator through your server control panel.
 2. If your server has phpMyAdmin, you can also create a database using phpMyAdmin.
 
-### Step 3: Run Installation Wizard
+### Step 3: Install Dependencies
+
+1. Navigate to the project directory:
+    ```bash
+    cd /path/to/your/laravel-shop-generator
+    ```
+2. Install Composer dependencies:
+    ```bash
+    composer install
+    ```
+3. Install NPM dependencies:
+    ```bash
+    npm install
+    ```
+
+### Step 4: Environment Configuration
+
+1. Copy the `.env.example` file to `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+2. Open the `.env` file and configure your environment variables, including database connection details.
+
+### Step 5: Generate Application Key
+
+1. Generate the application key:
+    ```bash
+    php artisan key:generate
+    ```
+
+### Step 6: Run Migrations and Seed Database
+
+1. Run the database migrations and seed the database:
+    ```bash
+    php artisan migrate --seed
+    ```
+
+### Step 7: Build Frontend Assets
+
+1. Build the frontend assets:
+    ```bash
+    npm run dev
+    ```
+
+### Step 8: Run Installation Wizard
 
 1. Go to your website address.
 2. Follow the installation wizard.
@@ -58,15 +103,15 @@ FleetCart is a powerful and feature-rich Ecommerce CMS built with Laravel. It pr
 
 ### Pre-Installation
 
-The pre-installation page checks if your server meets the requirements and has the correct directory permissions to set up FleetCart. Ensure that directories within the `storage` and the `bootstrap/cache` directories are writable by your web server.
+The pre-installation page checks if your server meets the requirements and has the correct directory permissions to set up Laravel Shop Generator. Ensure that directories within the `storage` and the `bootstrap/cache` directories are writable by your web server.
 
 ### Configuration
 
-Fill in the database connection details, administration details, and store details, then click the `Install` button to install FleetCart.
+Fill in the database connection details, administration details, and store details, then click the `Install` button to install Laravel Shop Generator.
 
 ### Complete
 
-After successfully installing FleetCart, you will see a success message. You now have the option to browse your online store or log into the administration panel.
+After successfully installing Laravel Shop Generator, you will see a success message. You now have the option to browse your online store or log into the administration panel.
 
 ## Admin Login
 
