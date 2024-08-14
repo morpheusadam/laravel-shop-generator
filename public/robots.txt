@@ -1,0 +1,21 @@
+User-Agent: *
+Disallow: /admin/
+Disallow: /*/admin/
+Disallow: /account/
+Disallow: /*/account/
+Disallow: /*/*suggestions
+Disallow: /storefront/
+Disallow: /*/storefront/
+Disallow: /cart/
+Disallow: /*/cart/
+Disallow: /checkout/
+Disallow: /*/checkout/
+Disallow: /password/
+Disallow: /*/password/
+Disallow: /logout/
+Disallow: /*/logout/
+Disallow: /install/
+Disallow: /license/
+Disallow: /offline/
+
+Allow: /

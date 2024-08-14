@@ -1,0 +1,32 @@
+.modal {
+    backdrop-filter: blur(2px);
+    background: rgba(28, 39, 48, 0.3);
+    padding-right: 0 !important;
+    transition: $transition-default;
+
+    &.in {
+        opacity: 1;
+
+        .modal-dialog {
+            transform: none;
+        }
+    }
+}
+
+.modal-dialog {
+    margin: 15px auto;
+}
+
+.modal-content {
+    padding: 0;
+    border: none;
+    border-radius: $radius-default;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-backdrop {
+    display: none;
+}

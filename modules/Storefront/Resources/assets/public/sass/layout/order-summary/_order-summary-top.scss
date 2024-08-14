@@ -1,0 +1,20 @@
+.order-summary-top {
+    .section-title {
+        padding-bottom: 18px;
+        border-bottom: 1px solid $border-color-lite;
+    }
+
+    .cart-item {
+        padding: 10px 0 10px;
+    }
+
+    .coupon-wrap {
+        input {
+            height: 40px;
+        }
+
+        .btn-apply-coupon {
+            margin-left: 10px;
+        }
+    }
+}

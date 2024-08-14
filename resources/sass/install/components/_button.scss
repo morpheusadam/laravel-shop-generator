@@ -1,0 +1,91 @@
+.btn {
+    --bs-btn-font-size: 14px;
+    --bs-btn-font-weight: #{$font-medium};
+    --bs-btn-line-height: 20px;
+    --bs-btn-padding-x: 16px;
+    --bs-btn-padding-y: 6px;
+    --bs-btn-border-radius: #{$radius-default};
+    --bs-btn-box-shadow: none;
+    --bs-btn-focus-box-shadow: none;
+    --bs-btn-disabled-opacity: 0.6;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    --bs-btn-color: #{$color-white};
+    --bs-btn-hover-color: #{$color-white};
+    --bs-btn-active-color: #{$color-white};
+    --bs-btn-bg: #{$color-primary-500};
+    --bs-btn-hover-bg: #{$color-primary-600};
+    --bs-btn-active-bg: #{$color-primary-600};
+    --bs-btn-border-color: #{$color-primary-500};
+    --bs-btn-hover-border-color: #{$color-primary-600};
+    --bs-btn-active-border-color: #{$color-primary-600};
+    --bs-btn-disabled-bg: #{$color-primary-600};
+    --bs-btn-disabled-border-color: #{$color-primary-600};
+}
+
+.btn-light {
+    --bs-btn-color: #{$color-gray-500};
+    --bs-btn-hover-color: #{$color-primary-600};
+    --bs-btn-active-color: #{$color-primary-600};
+    --bs-btn-bg: #{$color-white};
+    --bs-btn-hover-bg: #{$color-white};
+    --bs-btn-active-bg: #{$color-white};
+    --bs-btn-border-color: #{$color-gray-300};
+    --bs-btn-hover-border-color: #{$color-primary-500};
+    --bs-btn-active-border-color: #{$color-primary-500};
+    --bs-btn-disabled-color: #{$color-gray-500};
+    --bs-btn-disabled-bg: #{$color-gray-100};
+    --bs-btn-disabled-border-color: #{$color-gray-100};
+}
+
+.btn-close {
+    --bs-btn-close-color: #{$color-slate-900};
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-loading {
+    --bs-btn-color: transparent;
+    --bs-btn-hover-color: transparent;
+    --bs-btn-active-color: transparent;
+    --bs-btn-disabled-color: transparent;
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        height: 18px;
+        width: 18px;
+        border-radius: $radius-full;
+        animation: button-spin-loader 800ms linear infinite;
+    }
+
+    &:before {
+        border: 1px solid transparent;
+        border-top-color: $color-white;
+    }
+
+    &:after {
+        border: 1px solid rgba($color-white, 0.25);
+    }
+}
+
+@keyframes button-spin-loader {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

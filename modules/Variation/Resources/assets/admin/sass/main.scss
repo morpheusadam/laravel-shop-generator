@@ -1,0 +1,129 @@
+/*rtl:begin:ignore*/
+@import "@melloware/coloris/dist/coloris.css";
+/*rtl:end:ignore*/
+
+.form {
+    .has-variation-type {
+        margin-bottom: 10px;
+    }
+}
+
+.clr-field {
+    width: 100%;
+
+    button {
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+        height: auto;
+        width: 28px;
+        border-radius: 5px;
+        transform: none;
+    }
+
+    input {
+        padding-right: 40px;
+    }
+}
+
+.variations-group {
+    .variation-values {
+        margin-top: 15px;
+    }
+}
+
+.variation-values {
+    .table-responsive {
+        margin-bottom: 15px;
+    }
+
+    .options {
+        &.type-text {
+            .option-row {
+                td {
+                    &:nth-child(2) {
+                        width: 100%;
+                        min-width: 180px;
+                    }
+                }
+            }
+        }
+    }
+
+    .options {
+        &.type-color,
+        &.type-image {
+            .option-row {
+                td {
+                    &:nth-child(2) {
+                        width: 75%;
+                        min-width: 160px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 25%;
+                        min-width: 135px;
+
+                        .image-holder {
+                            height: 36px;
+                            width: 36px;
+                            margin: 0;
+
+                            > i {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        tr th {
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .variation-values {
+        .options {
+            &.type-color {
+                .option-row {
+                    td:nth-child(3) {
+                        min-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        .has-variation-type {
+            margin-bottom: 5px;
+        }
+
+        > .row {
+            > div {
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &:last-child {
+                > div {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .variations-group {
+        .variation-values {
+            margin-top: 20px;
+        }
+    }
+}

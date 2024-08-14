@@ -1,0 +1,28 @@
+{
+    "name": "fleetcart/cart",
+    "description": "The FleetCart Cart Module.",
+    "authors": [
+        {
+            "name": "Envay Soft",
+            "email": "envaysoft@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1.0",
+        "darryldecode/cart": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Cart\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

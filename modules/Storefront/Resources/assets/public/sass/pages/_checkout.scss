@@ -1,0 +1,35 @@
+@import "checkout/_checkout-left";
+@import "checkout/_checkout-right";
+
+.checkout-wrap {
+    margin-top: 50px;
+}
+
+.checkout-form {
+    display: flex;
+
+    .checkout-inner {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .order-summary {
+        .cart-items {
+            margin: -9px 0 17px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .checkout-form {
+        .checkout-inner {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .checkout-form {
+        flex-direction: column;
+    }
+}

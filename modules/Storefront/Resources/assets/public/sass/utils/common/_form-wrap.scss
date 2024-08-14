@@ -1,0 +1,85 @@
+.form-wrap {
+    margin-top: 63px;
+    padding-bottom: 20px;
+}
+
+.form-wrap-inner {
+    width: 600px;
+    margin: auto;
+    padding: 0 5px;
+
+    > h2 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    > p {
+        margin-bottom: 19px;
+        color: $color-gray;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 7px 14px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .btn-default {
+        width: 100%;
+        padding: 7px 14px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .sign-in-with {
+        font-size: 16px;
+        display: block;
+        margin-top: 25px;
+        color: $color-gray;
+        text-align: center;
+    }
+
+    .social-login {
+        display: flex;
+        margin-top: 13px;
+        justify-content: center;
+
+        li {
+            a {
+                font-size: 16px;
+                display: flex;
+                height: 35px;
+                width: 35px;
+                margin: 0 10px;
+                color: $color-white;
+                align-items: center;
+                justify-content: center;
+                border-radius: $radius-full;
+
+                &:hover {
+                    opacity: 0.85;
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .have-an-account {
+        display: block;
+        line-height: 26px;
+        margin-top: 23px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .form-wrap-inner {
+        width: 100%;
+    }
+}

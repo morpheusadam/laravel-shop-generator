@@ -1,0 +1,217 @@
+.content {
+    > .row {
+        > div {
+            padding-right: 10px;
+            padding-left: 10px;
+
+            &:first-child {
+                padding-left: 15px;
+            }
+
+            &:last-child {
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.grid {
+    > .row {
+        > div {
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:first-child {
+                padding-left: 15px;
+            }
+
+            &:last-child {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .single-grid {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        z-index: 0;
+
+        .single-grid-icon {
+            min-width: 70px;
+            max-width: 70px;
+            height: 70px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 70px;
+                top: 50%;
+                left: 50%;
+                transform: rotate(45deg);
+                transform-origin: 45% 15%;
+                background: rgba(0, 0, 0, 0.12);
+                z-index: -1;
+            }
+
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        .title {
+            font-weight: 600;
+            display: block;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .count {
+            font-size: 24px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+            color: #ffffff;
+        }
+
+        &.total-sales {
+            background: #475aff;
+
+            svg path {
+                fill: #475aff;
+            }
+        }
+
+        &.total-orders {
+            background: #ff316f;
+
+            svg path {
+                fill: #ff316f;
+            }
+        }
+
+        &.total-products {
+            background: #fa6d42;
+
+            svg g path {
+                fill: #fa6d42;
+            }
+        }
+
+        &.total-customers {
+            background: #5cc858;
+
+            svg path {
+                fill: #5cc858;
+            }
+        }
+    }
+}
+
+.dashboard-panel {
+    margin-bottom: 20px;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px rgb(140 140 140/.2);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.sales-analytics {
+        .chart {
+            padding: 0 24px 15px;
+            height: 282px !important;
+        }
+    }
+
+    .table-responsive {
+        margin-bottom: 5px;
+    }
+}
+
+.search-terms {
+    tbody > tr > td {
+        color: #626060;
+        padding: 16px 24px !important;
+        color: #0e1e3e;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+
+        &.empty {
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .grid {
+        .single-grid {
+            padding: 20px 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .content {
+        > .row {
+            > div {
+                padding-left: 15px;
+                padding-right: 15px;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .grid {
+        > .row {
+            > div {
+                &:nth-child(2) {
+                    margin-bottom: 20px;
+                    padding-right: 15px;
+                }
+
+                &:nth-child(3) {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .single-grid {
+            padding: 24px 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grid {
+        > .row {
+            > div {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}

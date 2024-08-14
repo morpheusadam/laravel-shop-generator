@@ -1,0 +1,27 @@
+{
+    "name": "fleetcart/address",
+    "description": "The FleetCart Address Module.",
+    "authors": [
+        {
+            "name": "Envay Soft",
+            "email": "envaysoft@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Address\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

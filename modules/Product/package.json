@@ -1,0 +1,13 @@
+{
+    "name": "product-module",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@melloware/coloris": "^0.24.0",
+        "blueimp-md5": "^2.19.0",
+        "tinymce": "5.10.7",
+        "vue-flatpickr-component": "8.1.8",
+        "vue2-selectize": "^1.1.7",
+        "vuedraggable": "^2.24.3"
+    }
+}

@@ -1,0 +1,34 @@
+.table {
+    tr {
+        &:first-child {
+            td {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    th,
+    td {
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            text-align: right;
+        }
+    }
+
+    th {
+        font-weight: $font-semi-bold;
+        color: $color-gray-700;
+        border-color: $color-slate-200;
+    }
+
+    td {
+        padding: 4px;
+        color: lighten(#4b5563, 15%);
+        border-bottom: none;
+        vertical-align: middle;
+    }
+}

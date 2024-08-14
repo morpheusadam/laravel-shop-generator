@@ -1,0 +1,32 @@
+.drift-bounding-box {
+    background: $color-default-transparent-lite;
+    background: var(--color-primary-transparent-lite);
+    z-index: 7;
+}
+
+.drift-zoom-pane {
+    left: 100%;
+    background: $color-white;
+    border-radius: $radius-default;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    z-index: 7;
+}
+
+.drift-zoom-pane-loader:before,
+.drift-zoom-pane-loader:after {
+    background: $color-default;
+    background: var(--color-primary);
+}
+
+/*rtl:ignore*/
+.rtl {
+    .drift-zoom-pane {
+        &.mobile-drift-zoom-pane {
+            right: auto;
+        }
+
+        img {
+            left: 0;
+        }
+    }
+}

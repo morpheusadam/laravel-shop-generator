@@ -1,0 +1,105 @@
+.top-brands-wrap {
+    margin-top: 50px;
+}
+
+.top-brands {
+    padding: 30px 50px;
+    border: 1px solid $border-color-lite;
+    border-radius: $radius-default;
+    white-space: nowrap;
+
+    &:hover {
+        .slick-arrow {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .slick-prev {
+            left: 25px;
+        }
+
+        .slick-next {
+            right: 25px;
+        }
+    }
+
+    .slick-arrow {
+        height: 25px;
+        width: 25px;
+        background: $color-default-transparent-lite;
+        background: var(--color-primary-transparent-lite);
+        border-radius: $radius-full;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition-default;
+
+        &:hover {
+            background: $color-default;
+            background: var(--color-primary);
+            opacity: 1;
+        }
+
+        &:before {
+            color: $color-white;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+
+    &.slick-prev {
+        left: -5px;
+    }
+
+    &.slick-next {
+        right: -5px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        &:before {
+            font-size: 12px;
+        }
+    }
+
+    .top-brand-item {
+        height: 60px;
+        margin: 0 10px;
+        border-radius: $radius-default;
+
+        &:hover {
+            > img {
+                transform: scale(1.1);
+            }
+        }
+
+        > img {
+            max-height: 100%;
+            max-width: 100%;
+            transition: $transition-primary;
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .top-brands {
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .top-brands {
+        padding: 15px 30px;
+
+        &:hover {
+            .slick-prev {
+                left: 15px;
+            }
+
+            .slick-next {
+                right: 15px;
+            }
+        }
+    }
+}

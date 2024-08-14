@@ -1,0 +1,111 @@
+.header-column-right {
+    height: 60px;
+    padding: 0 0 0 15px;
+    margin-top: 6px;
+    justify-content: flex-end;
+
+    .header-column-right-item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            > span,
+            .icon-wrap > svg circle,
+            .icon-wrap > svg path {
+                stroke: $color-default;
+                stroke: var(--color-primary);
+            }
+        }
+    }
+
+    .header-localization {
+        display: none;
+    }
+
+    .header-cart {
+        cursor: pointer;
+    }
+
+    .icon-wrap {
+        position: relative;
+        margin-right: 10px;
+
+        > svg {
+            height: 26px;
+            width: 26px;
+
+            circle,
+            path {
+                stroke: $color-black;
+            }
+        }
+
+        > .count {
+            position: absolute;
+            font-size: 10px;
+            line-height: 16px;
+            top: 0px;
+            right: -6px;
+            height: 16px;
+            width: 16px;
+            color: $color-white;
+            background: $color-default;
+            background: $color-red;
+            text-align: center;
+            border-radius: $radius-full;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: $xl) {
+    .header-column-right {
+        .header-cart {
+            > span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .header-column-right {
+        margin-top: unset;
+    }
+
+    .header-column-right {
+        .header-column-right-item {
+            margin-right: 0px;
+        }
+
+        .header-localization {
+            display: flex;
+        }
+
+        .header-wishlist {
+            margin-right: 0;
+            display: none;
+        }
+
+        .header-cart,
+        .header-compare {
+            display: none;
+        }
+
+        .icon-wrap {
+            margin-right: 0px;
+
+            > svg {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}

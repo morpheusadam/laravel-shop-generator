@@ -1,0 +1,121 @@
+html {
+    font-family: var(--base-font-family);
+}
+
+body {
+    font-family: var(--base-font-family);
+    font-size: 15px;
+    font-weight: var(--font-normal);
+    font-style: normal;
+    min-width: 320px;
+    color: $color-black;
+    overflow-x: hidden;
+
+    &.ltr {
+        direction: ltr;
+    }
+
+    &.rtl {
+        direction: rtl;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+address,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+a,
+button {
+    &:active,
+    &:focus,
+    &:visited {
+        outline: 0;
+    }
+}
+
+a {
+    transition: $transition-default;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+svg {
+    > path {
+        transition: $transition-default;
+    }
+}
+
+b,
+strong {
+    font-weight: var(--font-medium);
+}
+
+.tooltip {
+    pointer-events: none;
+
+    > .tooltip-inner {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: $radius-default;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1770px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .container {
+        max-width: 1920px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .container {
+        max-width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        padding-left: 1.8%;
+        padding-right: 1.8%;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

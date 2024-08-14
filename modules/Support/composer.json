@@ -1,0 +1,30 @@
+{
+    "name": "fleetcart/support",
+    "description": "The FleetCart Support Module.",
+    "authors": [
+        {
+            "name": "Envay Soft",
+            "email": "envaysoft@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1.0",
+        "spatie/once": "^2.1",
+        "spatie/schema-org": "^3.0",
+        "spatie/laravel-honeypot": "^4.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Support\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

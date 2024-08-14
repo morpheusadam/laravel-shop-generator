@@ -1,0 +1,23 @@
+{
+    "name": "storefront-theme",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "animate.css": "3.7.2",
+        "blueimp-md5": "^2.19.0",
+        "bootstrap": "^5.3.3",
+        "countdown": "https://github.com/mckamey/countdownjs",
+        "dateformat": "^5.0.3",
+        "drift-zoom": "^1.5.1",
+        "flatpickr": "^4.6.13",
+        "glightbox": "^3.3.0",
+        "jquery-nice-select": "^1.1.0",
+        "line-awesome": "^1.3.0",
+        "lodash": "^4.17.21",
+        "nouislider": "^15.8.0",
+        "slick-animation": "^0.3.3",
+        "slick-carousel": "^1.8.1",
+        "v-click-outside": "^3.2.0",
+        "vue-toast-notification": "0.6.3"
+    }
+}

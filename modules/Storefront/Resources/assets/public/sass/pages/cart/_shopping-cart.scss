@@ -1,0 +1,22 @@
+.shopping-cart-wrap {
+    margin-top: 50px;
+}
+
+.shopping-cart {
+    display: flex;
+}
+
+.shopping-cart-inner {
+    flex-grow: 1;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: $lg) {
+    .shopping-cart {
+        flex-direction: column;
+    }
+
+    .shopping-cart-inner {
+        padding-right: 0;
+    }
+}

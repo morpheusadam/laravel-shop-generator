@@ -1,0 +1,33 @@
+@import "flatpickr/dist/flatpickr";
+
+.flatpickr-calendar {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.flatpickr-months {
+    .flatpickr-month {
+        height: 50px;
+    }
+
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+        top: 8px;
+    }
+}
+
+.rtl {
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+        transform: rotateY(180deg);
+    }
+}
+
+.flatpickr-current-month {
+    height: auto;
+}
+
+.flatpickr-weekdays {
+    span {
+        font-family: "Inter", sans-serif;
+    }
+}

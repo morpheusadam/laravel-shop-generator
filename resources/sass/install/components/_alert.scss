@@ -1,0 +1,11 @@
+.alert {
+    --bs-alert-margin-bottom: 15px;
+    --bs-alert-border-radius: #{$radius-default};
+}
+
+.alert-danger {
+    --bs-alert-color: #{$color-red-800};
+    --bs-alert-bg: #{$color-red-100};
+    --bs-alert-border-color: #{$color-red-100};
+    --bs-alert-link-color: #{$color-red-900};
+}

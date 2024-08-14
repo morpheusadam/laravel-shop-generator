@@ -1,0 +1,205 @@
+.options-group {
+    .option-values {
+        margin-top: 15px;
+
+        .options {
+            tr th {
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.new-option {
+    overflow: hidden;
+    margin-bottom: -15px;
+
+    .checkbox {
+        margin: 26px 0 0;
+        display: inline-block;
+    }
+}
+
+.options-group-wrapper {
+    .panel-title [data-toggle="collapse"] {
+        font-size: 14px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 9px 15px;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:after {
+            top: 11px !important;
+        }
+
+        .drag-handle {
+            font-size: 16px;
+            color: #737881;
+            margin-right: 11px;
+            white-space: nowrap;
+            cursor: move;
+
+            i {
+                &:nth-child(2) {
+                    margin-left: -3px;
+                }
+            }
+        }
+
+        .delete-option {
+            width: 30px;
+            display: flex;
+            align-items: center;
+            align-self: stretch;
+            justify-content: center;
+            margin-right: 20px;
+            color: #4d4d4d;
+            transition: 150ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: #333333;
+            }
+        }
+    }
+
+    .form-group {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.options {
+    .form-group {
+        margin: 0;
+    }
+
+    thead th {
+        &:first-child {
+            width: 35px;
+        }
+
+        &:last-child {
+            width: 60px;
+        }
+    }
+}
+
+.option-select {
+    .options {
+        .option-row {
+            td {
+                &:nth-child(2) {
+                    min-width: 180px;
+                }
+
+                &:nth-child(3) {
+                    min-width: 120px;
+                }
+
+                &:nth-child(4) {
+                    min-width: 110px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .options-group {
+        .option-values {
+            .option-text,
+            .option-select {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .new-option {
+        .form-group {
+            label {
+                margin-bottom: 6px;
+                padding-top: 0;
+            }
+        }
+
+        .checkbox {
+            padding-top: 8px;
+
+            label {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .new-option {
+        > .row {
+            > .col-sm-6 {
+                padding-right: 10px;
+            }
+
+            > .col-sm-3 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .options-group {
+        .option-values {
+            margin-top: 20px;
+
+            .option-select {
+                .table {
+                    > tbody {
+                        > tr {
+                            > td {
+                                &:nth-child(2) {
+                                    min-width: 160px;
+                                }
+
+                                &:nth-child(3) {
+                                    min-width: 145px;
+                                }
+
+                                &:nth-child(4) {
+                                    min-width: 110px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .new-option {
+        margin-bottom: -10px;
+
+        > .row {
+            > div {
+                &:nth-child(3) {
+                    .form-group {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .checkbox {
+            margin-top: -3px;
+        }
+    }
+}

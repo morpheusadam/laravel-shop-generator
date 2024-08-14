@@ -1,0 +1,9 @@
+{
+    "name": "media-module",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {},
+    "dependencies": {
+        "dropzone": "^6.0.0-beta.2"
+    }
+}

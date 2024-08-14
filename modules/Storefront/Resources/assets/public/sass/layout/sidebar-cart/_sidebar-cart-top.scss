@@ -1,0 +1,61 @@
+.sidebar-cart-top {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: $color-white;
+
+    .title {
+        position: relative;
+
+        .count {
+            position: absolute;
+            font-weight: var(--font-normal);
+            font-size: 10px;
+            line-height: 16px;
+            top: -4px;
+            right: -15px;
+            height: 16px;
+            width: 16px;
+            color: #ffffff;
+            background: #e23e1d;
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .sidebar-cart-close {
+        display: flex;
+        cursor: pointer;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+
+            > svg {
+                path {
+                    stroke: $color-red;
+                }
+            }
+        }
+
+        > svg {
+            width: 18px;
+            height: 18px;
+            transition: $transition-default;
+
+            path {
+                stroke: $color-black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .sidebar-cart-top {
+        padding: 12px 20px;
+    }
+}

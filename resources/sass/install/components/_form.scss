@@ -1,0 +1,132 @@
+.form-horizontal {
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    > .required {
+        margin-left: 4px;
+        color: $color-red-500;
+    }
+
+    > .mdi {
+        font-size: 14px;
+        color: $color-gray-600;
+    }
+}
+
+.form-label,
+.col-form-label {
+    font-weight: $font-medium;
+    display: flex;
+    color: $color-gray-700;
+}
+
+.form-label {
+    margin-bottom: 5px;
+}
+
+.col-form-label {
+    align-self: flex-start;
+    padding-top: 5px;
+}
+
+.input-group-text {
+    color: $color-gray-500;
+    background: lighten($color-gray-100, 1%);
+    border: 1px solid lighten($color-slate-300, 4%);
+
+    .mdi {
+        color: lighten($color-gray-500, 4%);
+    }
+}
+
+.form-control,
+.form-select {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-gray-500;
+    border-radius: $radius-default;
+    border-color: lighten($color-slate-300, 4%);
+
+    &:focus {
+        color: $color-slate-600;
+        border-color: $color-primary-500;
+        box-shadow: none;
+        text-overflow: ellipsis;
+    }
+
+    &:placeholder-shown {
+        text-overflow: ellipsis;
+    }
+
+    &.active {
+        border-color: $color-primary-500;
+    }
+}
+
+.form-control {
+    padding: 7px 11px;
+
+    &:disabled {
+        color: $color-gray-500;
+        background: lighten($color-slate-100, 2%);
+        opacity: 0.8;
+    }
+}
+
+.form-select {
+    padding: 7px 35px 7px 11px;
+    background-image: url(../../images/arrow-down.svg);
+    background-size: 20px 20px;
+    background-position: right 8px center;
+    cursor: pointer;
+}
+
+.form-check-group {
+    .form-check {
+        margin-bottom: 11px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.form-check-label {
+    font-weight: $font-medium;
+}
+
+.input-group-row {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form-footer {
+    padding-top: 20px;
+    border-top: 1px solid lighten($color-slate-300, 4%);
+}
+
+.invalid-feedback,
+.text-muted {
+    display: block;
+    margin: 3px 0 -5px;
+}
+
+.invalid-feedback {
+    font-size: 14px;
+    color: $color-red-500;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: lighten($color-gray-500, 10%) !important;
+}

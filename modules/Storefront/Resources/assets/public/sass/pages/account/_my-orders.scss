@@ -1,0 +1,57 @@
+.my-orders-table {
+    margin-bottom: 5px;
+
+    thead {
+        th {
+            white-space: nowrap;
+        }
+    }
+
+    tbody {
+        td {
+            white-space: nowrap;
+            padding: 20px 30px;
+
+            &:first-child {
+                font-weight: var(--font-medium);
+            }
+
+            &:nth-child(4) {
+                font-weight: var(--font-medium);
+            }
+        }
+    }
+
+    .product-price {
+        color: $color-black;
+    }
+
+    .badge {
+        margin-top: -6px;
+    }
+
+    .btn-view {
+        @extend %account-common-buttons;
+    }
+}
+
+.user-info {
+    padding: 20px 25px !important;
+
+    li {
+        display: flex;
+        line-height: 24px;
+        padding: 11px 0;
+        color: $color-gray;
+
+        > i {
+            font-size: 24px;
+            margin-right: 8px;
+            vertical-align: top;
+        }
+
+        > span {
+            word-break: break-all;
+        }
+    }
+}

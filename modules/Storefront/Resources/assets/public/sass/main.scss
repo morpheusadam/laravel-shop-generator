@@ -1,0 +1,105 @@
+$grid-columns: 18;
+
+// Vendors
+@import "bootstrap/scss/bootstrap";
+/*rtl:begin:ignore*/
+@import "line-awesome/dist/line-awesome/css/line-awesome";
+@import "animate.css/animate";
+@import "jquery-nice-select/css/nice-select";
+@import "drift-zoom/dist/drift-basic";
+@import "nouislider/dist/nouislider";
+@import "flatpickr/dist/flatpickr";
+@import "glightbox/dist/css/glightbox";
+/*rtl:end:ignore*/
+@import "slick-carousel/slick/slick";
+
+// Utilities
+@import "utils/_variables";
+@import "utils/_utilities";
+@import "utils/_common";
+
+// Vendors
+@import "vendors/slick-theme.css";
+@import "vendors/_slick";
+@import "vendors/_drift-zoom";
+
+// Base
+@import "base/_reset";
+@import "base/_typography";
+
+// Components
+@import "components/_custom-select";
+@import "components/_mega-menu";
+@import "components/_tabs";
+@import "components/_buttons";
+@import "components/_scrollbar";
+@import "components/_countdown";
+@import "components/_breadcrumb";
+@import "components/_form";
+@import "components/_alert";
+@import "components/_table";
+@import "components/_badge";
+@import "components/_panel";
+@import "components/_pagination";
+@import "components/_loader";
+@import "components/_modal";
+@import "components/_toast";
+
+// Layout
+@import "layout/_top-nav";
+@import "layout/_header";
+@import "layout/_sidebar-menu";
+@import "layout/_localization";
+@import "layout/_sidebar-cart";
+@import "layout/_top-navigation";
+@import "layout/_bottom-navigation";
+@import "layout/_landscape-products";
+@import "layout/_steps";
+@import "layout/_order-summary";
+@import "layout/_subscribe";
+@import "layout/_newsletter";
+@import "layout/_cookie-bar";
+@import "layout/_footer";
+
+// Pages
+@import "pages/_home";
+@import "pages/_register";
+@import "pages/_account";
+@import "pages/_contact";
+@import "pages/_compare";
+@import "pages/_product-search";
+@import "pages/_product-details";
+@import "pages/_cart";
+@import "pages/_checkout";
+@import "pages/_order-complete";
+@import "pages/_all-brands";
+@import "pages/_all-categories";
+@import "pages/_order-details";
+@import "pages/_404";
+@import "pages/_custom-page";
+
+[v-cloak] {
+    display: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background: $color-gray-lite;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:vertical {
+    border-radius: 5px;
+    background: #bab9b9;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background: var(--color-primary);
+    }
+}

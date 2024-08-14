@@ -1,0 +1,125 @@
+.alert {
+    font-size: 16px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    margin: 0 0 0 15px;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    border: 1px solid #00E57B;
+    color: $color-white;
+    border-radius: $radius-default;
+    z-index: 10;
+    padding-right: 20px;
+
+    > svg {
+        margin-right: 16px;
+        min-width: 24px;
+    }
+
+    .close {
+        height: 24px;
+        min-width: 24px;
+        right: 20px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: unset;
+        background: transparent;
+        border: none;
+        opacity: 1;
+        border-radius: 5px;
+        transition: $transition-default;
+        box-sizing: border-box;
+        margin-left: 16px;
+
+        svg {
+            height: 10px;
+            width: 10px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        > i {
+            color: $color-white;
+        }
+    }
+}
+
+.alert-success {
+    background: #00BC65;
+    border-color: #00E57B;
+
+    svg {
+        rect {
+            fill: #009E55;
+        }
+    }
+
+    .close {
+        &:hover {
+            background: #009E55;
+        }
+    }
+}
+
+.alert-danger {
+    background: #FF5748;
+    border-color: #FFA199;
+
+    svg {
+        rect {
+            fill: #CC1100;
+        }
+    }
+
+    .close {
+        &:hover {
+            background: #CC1100;
+        }
+    }
+}
+
+.alert-info {
+    background: #0068E0;
+    border-color: #479CFF;
+
+    svg {
+        rect {
+            fill: #005AC2;
+        }
+    }
+
+    .close {
+        &:hover {
+            background: #005AC2;
+        }
+    }
+}
+
+.alert-warning {
+    background: #FFAD00;
+    border-color: #FFCE66;
+
+    svg {
+        rect {
+            fill: #E59B00;
+        }
+    }
+
+    .close {
+        &:hover {
+            background: #E59B00;
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .alert {
+        bottom: 90px;
+    }
+}

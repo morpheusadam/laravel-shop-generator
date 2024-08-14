@@ -1,0 +1,8 @@
+{
+    "name": "menu-module",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "nestable2": "^1.6.0"
+    }
+}

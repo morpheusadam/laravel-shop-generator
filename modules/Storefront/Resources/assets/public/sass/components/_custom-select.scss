@@ -1,0 +1,93 @@
+.nice-select {
+    height: auto;
+    display: inline-block;
+    float: none;
+    border: none;
+    line-height: 1;
+
+    &:after {
+        border: none;
+    }
+
+    &.form-control {
+        color: $color-black;
+        padding: 12px 30px 12px 20px;
+        border: 1px solid $color-gray-lite;
+
+        &.arrow-black {
+            background-position: right 10px center;
+        }
+    }
+
+    &.right {
+        float: none;
+    }
+
+    .list {
+        margin-top: 1px;
+        padding: 19px 0 16px;
+        border-radius: $radius-default;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+        transform: scale(0.8);
+        z-index: 9;
+        transition: all $transition-default cubic-bezier(0.5, 0, 0, 1.25);
+        overflow: unset;
+        top: 30px !important;
+    }
+
+    &.open {
+        .list {
+            &::after {
+                content: "";
+                width: calc(100% - 20px);
+                height: 15px;
+                background: #ffffff;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                z-index: 11;
+            }
+
+            &::before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: #ffffff;
+                display: block;
+                border-bottom-right-radius: 4px;
+                position: absolute;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+                top: -7px;
+                left: 63px;
+                transform: rotate(225deg);
+                z-index: 10;
+            }
+        }
+    }
+
+    .option {
+        line-height: 36px;
+        padding: 0 30px;
+
+        &:hover {
+            color: $color-default;
+            color: var(--color-primary);
+            background: $color-white;
+        }
+
+        &.focus {
+            background: $color-white;
+        }
+
+        &.selected {
+            font-weight: var(--font-normal);
+            color: $color-default;
+            color: var(--color-primary);
+
+            &.focus {
+                background: $color-white;
+            }
+        }
+    }
+}

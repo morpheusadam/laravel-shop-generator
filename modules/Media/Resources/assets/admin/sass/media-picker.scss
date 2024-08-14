@@ -1,0 +1,81 @@
+.file-manager-iframe {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.file-manager {
+    background: #f9f9f9;
+    margin-top: 20px;
+    overflow-x: auto;
+
+    .dataTable {
+        .btn {
+            padding: 9px 16px;
+            width: 82px;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space: nowrap;
+        }
+
+        .select-media {
+            > i {
+                -webkit-text-stroke: 1px #f1f1f1;
+            }
+        }
+    }
+}
+
+.media-picker-modal {
+    padding-right: 0 !important;
+    z-index: 1150;
+
+    > i {
+        margin-right: 5px;
+    }
+
+    .modal-dialog {
+        width: auto;
+        margin: 25px auto;
+    }
+
+    .modal-content {
+        margin: auto;
+        float: none;
+        border: 1px solid #d2d6de;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .modal-header {
+        padding: 10px 15px;
+        background: #f1f1f1;
+
+        > .close {
+            margin-top: 3px;
+            -webkit-text-stroke: 0;
+            transition: 150ms;
+        }
+    }
+
+    .modal-body {
+        background: #f9f9f9;
+        padding: 15px 0;
+    }
+
+    .modal.fade .modal-dialog {
+        transform: scale(0.8);
+        opacity: 0;
+        transition: 150ms ease-in-out;
+
+        &.in .modal-dialog {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .media-picker-modal .modal-dialog {
+        margin: 10px;
+    }
+}

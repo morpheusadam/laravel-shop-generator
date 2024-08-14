@@ -1,0 +1,100 @@
+.localization {
+    width: 100%;
+    height: calc(100vh - 120px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 16px 16px 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: $transition-primary;
+    z-index: 181;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .localization-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px;
+        border-bottom: 1px solid #e2e8f0;
+
+        h3 {
+            color: #0e1e3e;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: var(--font-medium);
+        }
+
+        .localization-cross-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: $transition-default;
+
+            svg {
+                width: 16px;
+                height: 16px;
+
+                path {
+                    stroke: #292d32;
+                    transition: $transition-default;
+                }
+            }
+
+            &:hover {
+                background: var(--color-primary-transparent-lite-2);
+
+                svg path {
+                    stroke: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    .localization-form {
+        padding: 24px;
+
+        .form-group {
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-image: url("../images/arrow-black.png");
+                background-repeat: no-repeat;
+                background-size: 10px;
+                background-position: right 15px center;
+            }
+
+            .input-group {
+                position: relative;
+
+                .form-control {
+                    padding-left: 48px;
+                    border-radius: $radius-default !important;
+                }
+
+                .input-icon {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 16px;
+                    z-index: 3;
+                }
+            }
+        }
+    }
+}

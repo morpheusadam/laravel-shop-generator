@@ -1,0 +1,25 @@
+@import "product-search/_product-search-left";
+@import "product-search/_product-search-right";
+@import "product-search/_category-menu";
+@import "product-search/_filter-section";
+@import "product-search/_search-result";
+@import "product-search/_grid-view-product";
+@import "product-search/_list-view-product";
+
+.product-search-wrap {
+    margin-top: 50px;
+
+    .product-search {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .product-search-wrap {
+        margin-top: 24px;
+    }
+
+    .product-search {
+        flex-direction: column-reverse;
+    }
+}

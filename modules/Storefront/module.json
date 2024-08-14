@@ -1,0 +1,9 @@
+{
+    "name": "Storefront",
+    "alias": "storefront",
+    "description": "The FleetCart Storefront Module.",
+    "version": "2.0.0",
+    "priority": 100,
+    "providers": ["Modules\\Storefront\\Providers\\StorefrontServiceProvider"],
+    "files": ["helpers.php"]
+}

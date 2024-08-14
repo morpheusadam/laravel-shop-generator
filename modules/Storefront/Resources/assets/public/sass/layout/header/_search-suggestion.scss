@@ -1,0 +1,211 @@
+.search-suggestions {
+    position: absolute;
+    left: 0px;
+    top: 63px;
+    right: 0px;
+    background: $color-white;
+    border-bottom-left-radius: $radius-default;
+    border-bottom-right-radius: $radius-default;
+    padding: 0px 8px 0px 8px;
+    z-index: 201;
+
+    &.v-enter-active,
+    &.v-leave-active {
+        transition: opacity $transition-default;
+    }
+
+    &.v-enter-from,
+    &.v-leave-to {
+        opacity: 0;
+    }
+
+    .search-suggestions-inner {
+        max-height: 425px;
+        background: $color-white;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+            height: 3px;
+        }
+    }
+
+    .more-results {
+        font-size: 14px;
+        display: block;
+        padding: 6px 0;
+        color: $color-gray-dark;
+        background: $color-white-dark;
+        text-align: center;
+        border-top: 1px solid $color-gray-lite;
+        margin-left: -8px;
+        margin-right: -8px;
+
+        &:hover {
+            color: $color-default;
+            color: var(--color-primary);
+        }
+    }
+
+    .title {
+        font-size: 13px;
+        font-weight: var(--font-normal);
+        position: relative;
+        padding: 6px 20px;
+        color: $color-gray-dark;
+        background: $color-white-dark;
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 7px;
+            height: 15px;
+            width: 7px;
+            background: $color-default;
+            background: var(--color-primary);
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+    }
+
+    .list-item {
+        transition: $transition-default;
+
+        &.active {
+            background: #f7f9fa;
+        }
+    }
+}
+
+.category-suggestion {
+    .title {
+        margin-bottom: 14px;
+    }
+
+    & + .product-suggestion {
+        margin-top: 11px;
+    }
+}
+
+.category-suggestion-list {
+    .single-item {
+        font-size: 14px;
+        line-height: 26px;
+        display: block;
+        max-width: 100%;
+        padding: 1px 20px;
+        color: $color-gray;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+}
+
+.product-suggestion {
+    .title {
+        margin-bottom: 14px;
+    }
+}
+
+.product-suggestion-list {
+    .list-item {
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .single-item {
+        position: relative;
+        display: flex;
+        padding: 6px 20px;
+    }
+
+    .product-image {
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+        border-radius: $radius-default;
+        overflow: hidden;
+
+        .image-placeholder {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    .product-info {
+        min-width: 0;
+        margin-left: 20px;
+        flex-grow: 1;
+    }
+
+    .product-info-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-name {
+        font-size: 14px;
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 3px;
+        color: $color-gray;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+
+    .product-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: -2px 0 -1px 15px;
+    }
+
+    em {
+        font-weight: var(--font-medium);
+        font-style: inherit;
+        color: $color-default;
+        color: var(--color-primary);
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .search-suggestions {
+        top: 60px;
+        display: none;
+
+        .search-suggestions-inner {
+            max-height: 285px;
+        }
+    }
+
+    .header-wrap-inner.sticky {
+        .header-search-sm {
+            margin-top: 0px !important;
+        }
+    }
+
+    .header-wrap-inner {
+        &.sticky {
+            .search-suggestions {
+                top: 60px;
+            }
+        }
+    }
+
+    .header-search-sm-form {
+        &.active {
+            + .search-suggestions {
+                display: block;
+            }
+        }
+    }
+}

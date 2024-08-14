@@ -1,0 +1,116 @@
+.landscape-tab-products-wrap {
+    margin-top: 30px;
+
+    .tab-products-header {
+        display: flex;
+        justify-content: space-between;
+
+        .tabs {
+            display: flex !important;
+            padding-left: 0;
+
+            .tab-item {
+                white-space: nowrap;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+    }
+
+    .section-title {
+        margin-top: 13px;
+        padding-bottom: 14px;
+    }
+}
+
+.landscape-left-tab-products {
+    margin-bottom: -50px;
+
+    .arrow-prev.slick-arrow,
+    .arrow-next.slick-arrow {
+        top: -40px;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .landscape-tab-products-wrap {
+        .tab-products-header {
+            text-align: center;
+            border-bottom: unset;
+            flex-direction: column;
+
+            .tab-products-header-overflow {
+                overflow: auto;
+                padding-bottom: 10px;
+                display: flex;
+                position: relative;
+
+                &::-webkit-scrollbar {
+                    width: 0px;
+                    height: 0px;
+                }
+        
+                &::-webkit-scrollbar-track,
+                &::-webkit-scrollbar-thumb,
+                &::-webkit-scrollbar-thumb:hover {
+                    background: transparent;
+                }
+
+                .tabs {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: 1px solid #e5e5e5;
+
+                    .tab-item {
+                        &::after {
+                            bottom: -8px;
+                            z-index: 1;
+                        }
+                        
+                        &::before {
+                            bottom: -1px;
+                            z-index: 1;
+                        }
+                    }
+                }
+
+                hr {
+                    display: block;
+                    height: 0;
+                    background: transparent;
+                    position: absolute;
+                    width: 100%;
+                    top: 41px;
+                    left: 0;
+                    border: unset;
+                    border-bottom: 1px solid #e5e5e5;
+                    opacity: 1;
+                }
+            }
+
+            .section-title {
+                margin: 0 0 10px;
+                padding-top: 15px;
+
+                &:after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .tabs {
+                display: block;
+                margin-top: 5px;
+                text-align: center;
+
+                .tab-item {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

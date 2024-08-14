@@ -1,0 +1,15 @@
+{
+    "name": "Support",
+    "alias": "support",
+    "description": "The FleetCart Support Module.",
+    "priority": 120,
+    "providers": [
+        "Modules\\Support\\Providers\\MySQLScoutServiceProvider",
+        "Modules\\Support\\Providers\\EloquentMacroServiceProvider",
+        "Modules\\Support\\Providers\\PWAServiceProvider",
+        "Modules\\Support\\Providers\\SitemapServiceProvider"
+    ],
+    "files": [
+        "helpers.php"
+    ]
+}

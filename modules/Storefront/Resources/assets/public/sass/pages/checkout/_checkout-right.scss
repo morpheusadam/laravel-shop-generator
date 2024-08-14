@@ -1,0 +1,105 @@
+.checkout-right {
+    width: 395px;
+    min-width: 395px;
+    padding: 0 15px;
+
+    .payment-method {
+        .title {
+            margin-bottom: 13px;
+        }
+
+        .payment-method-form {
+            padding: 25px 25px 4px;
+            border: 1px solid $color-gray-lite;
+            border-radius: $radius-default;
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            .form-radio {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-weight: var(--font-medium);
+                color: $color-black;
+            }
+
+            .helper-text {
+                font-size: 13px;
+                display: block;
+                margin: -4px 0 0 28px;
+                color: $color-gray;
+            }
+
+            .error-message {
+                margin: -2px 0 20px;
+            }
+        }
+    }
+
+    .payment-instructions {
+        margin-top: 30px;
+        padding: 21px 25px;
+        background: $color-white-dark;
+        border-radius: $radius-default;
+
+        .title {
+            margin-bottom: 14px;
+        }
+
+        > p {
+            font-size: 14px;
+            color: $color-gray;
+        }
+    }
+
+    .shipping-method {
+        margin-top: 33px;
+
+        .title {
+            margin-bottom: 13px;
+        }
+
+        .shipping-method-form {
+            padding: 25px 25px 7px;
+            border: 1px solid $color-gray-lite;
+            border-radius: $radius-default;
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            .form-radio {
+                font-weight: var(--font-normal);
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 8px;
+
+                label {
+                    font-weight: var(--font-normal);
+                }
+
+                span {
+                    font-weight: var(--font-medium);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .checkout-right {
+        width: 100%;
+        min-width: 0;
+        margin-top: 14px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .checkout-right {
+        padding-right: 0;
+    }
+}

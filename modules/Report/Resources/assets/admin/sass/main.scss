@@ -1,0 +1,58 @@
+.report-wrapper {
+    background: transparent;
+    box-shadow: none;
+}
+
+.report-result {
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .table-responsive {
+        margin-bottom: 0;
+    }
+
+    .table {
+        margin-bottom: 0;
+
+        > tbody {
+            > tr {
+                > td {
+                    &:first-child {
+                        width: 350px !important;
+                        max-width: unset !important;
+                    }
+                }
+            }
+        }
+
+        td {
+            padding: 15px;
+            border: none;
+
+            &.empty {
+                text-align: center;
+            }
+
+            a {
+                color: #333;
+            }
+        }
+    }
+}
+
+.filter-report {
+    padding: 15px;
+    margin-bottom: 0;
+
+    form {
+        margin-top: 15px;
+    }
+
+    .form-group select {
+        width: 100%;
+    }
+
+    .tab-content-title {
+        padding: 0;
+    }
+}

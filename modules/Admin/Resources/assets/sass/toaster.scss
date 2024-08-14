@@ -1,0 +1,23 @@
+@import "vue-toast-notification/dist/theme-sugar";
+
+.v-toast {
+    padding: 20px 20px 15px;
+}
+
+.v-toast__item {
+    min-height: 3em;
+
+    .v-toast__icon {
+        display: none;
+    }
+
+    .v-toast__text {
+        padding: 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .v-toast {
+        padding: 15px 15px 10px !important;
+    }
+}

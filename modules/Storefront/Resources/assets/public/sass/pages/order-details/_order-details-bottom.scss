@@ -1,0 +1,24 @@
+.order-details-bottom {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .order-summary-list {
+        width: 300px;
+    }
+
+    .order-summary-total {
+        width: 300px;
+        margin-top: 13px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .order-details-bottom {
+        .order-summary-list,
+        .order-summary-total {
+            width: 100%;
+        }
+    }
+}

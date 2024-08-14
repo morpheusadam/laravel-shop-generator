@@ -1,0 +1,48 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    direction: ltr;
+    font-family: $font-inter;
+    font-weight: $font-regular;
+    font-size: 14px;
+    font-style: normal;
+    min-width: 320px;
+    color: $color-gray-600;
+    background: $color-slate-200 url(../../images/installer-bg.png) no-repeat
+        center center;
+    background-size: cover;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+b {
+    font-weight: $font-medium;
+    color: $color-gray-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.simplebar-scrollbar::before {
+    background: $color-slate-300;
+}

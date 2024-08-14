@@ -1,0 +1,11 @@
+@import "product-details/_product-details-top";
+@import "product-details/_product-gallery";
+@import "product-details/_product-details-info";
+@import "product-details/_product-details-bottom";
+@import "product-details/_product-description";
+@import "product-details/_product-specification";
+@import "product-details/_product-reviews";
+
+.product-details-wrap {
+    margin-top: 50px;
+}

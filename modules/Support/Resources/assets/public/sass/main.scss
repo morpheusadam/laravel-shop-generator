@@ -1,0 +1,89 @@
+@import "@modules/Storefront/Resources/assets/public/sass/utils/_variables.scss";
+
+.sitemap-parent {
+    padding-top: 30px;
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 28px;
+        color: $color-black;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-top: -3px;
+    }
+
+    .sitemap-items {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+
+        li {
+            padding: 1px 0;
+            width: calc(25% - 20px);
+            margin-left: 20px;
+            margin-bottom: 10px;
+
+            a {
+                color: $color-gray;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sitemap-parent {
+        .sitemap-items {
+            li {
+                width: calc(33.3333% - 20px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sitemap-parent {
+        h5 {
+            border-bottom: 1px solid $border-color-lite;
+            margin-bottom: 14px;
+            padding-bottom: 13px;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -1px;
+                width: 50px;
+                border-bottom: 2px solid var(--color-primary);
+            }
+        }
+
+        .sitemap-items {
+            li {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sitemap-parent {
+        .sitemap-items {
+            li {
+                width: calc(50% - 20px);
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+}

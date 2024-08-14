@@ -1,0 +1,33 @@
+.single-feature {
+    display: flex;
+    justify-content: center;
+
+    .feature-icon {
+        margin-right: 13px;
+
+        > i {
+            font-size: 36px;
+            color: $color-default;
+            color: var(--color-primary);
+        }
+    }
+
+    .feature-details {
+        > span,
+        > h6 {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        > span {
+            width: 100%;
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-gray;
+            margin-top: 2px;
+        }
+    }
+}

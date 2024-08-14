@@ -1,0 +1,195 @@
+.features-wrap {
+    margin-top: 50px;
+}
+
+.features-wrap {
+    .feature-list {
+        border: 1px solid $border-color;
+        border-radius: $radius-default;
+        padding: 30px 0;
+
+        &:not(.slick-slider) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 0;
+        }
+
+        &:hover {
+            .slick-arrow {
+                opacity: 1;
+                visibility: visible;
+
+                &.slick-prev {
+                    left: 15px;
+                }
+
+                &.slick-next {
+                    right: 15px;
+                }
+            }
+        }
+
+        .slick-arrow {
+            height: 24px;
+            width: 24px;
+            background: $color-default-transparent-lite;
+            background: var(--color-primary-transparent-lite);
+            border-radius: $radius-full;
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition-default;
+
+            &:hover {
+                background: $color-default;
+                background: var(--color-primary);
+                opacity: 1;
+            }
+
+            &:before {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+
+        .slick-prev {
+            left: -15px;
+            right: auto;
+        }
+
+        .slick-next {
+            right: -15px;
+            left: auto;
+        }
+
+        .slick-prev,
+        .slick-next {
+            &:before {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .single-feature {
+        position: relative;
+        display: flex;
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding: 0 15px;
+        justify-content: center;
+
+        &:last-child {
+            &:after {
+                width: 0;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            height: 42px;
+            width: 1px;
+            background: $border-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .features-wrap {
+        .feature-list {
+            &:not(.slick-slider) {
+                .single-feature {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+
+                    &:nth-child(4) {
+                        &:after {
+                            content: none;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .features-wrap {
+        .feature-list {
+            &:not(.slick-slider) {
+                .single-feature {
+                    flex: 0 0 33.33333333333333%;
+                    max-width: 33.33333333333333%;
+
+                    &:nth-child(3) {
+                        &:after {
+                            content: none;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .features-wrap {
+        .feature-list {
+            &:not(.slick-slider) {
+                .single-feature {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+
+                    &:nth-child(2) {
+                        &:after {
+                            content: none;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .features-wrap {
+        .feature-list {
+            &:not(.slick-slider) {
+                .single-feature {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    justify-content: flex-start;
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+
+            .single-feature {
+                justify-content: flex-start;
+                padding: 0 30px;
+
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
