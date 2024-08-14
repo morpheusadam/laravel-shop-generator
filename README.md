@@ -24,48 +24,49 @@ FleetCart is a powerful and feature-rich Ecommerce CMS built with Laravel. It pr
 
 ## Requirements
 
-- **PHP:** 8.1 or higher
-- **Laravel:** 10.48.12
-- **MySQL:** 8.x
+- **PHP:** 7.4+ (Recommended: 8.1 or higher)
+- **MySQL:** 5.6+ or MariaDB 10.0+
+- **PHP Extensions:**
+  - Intl
+  - OpenSSL
+  - PDO
+  - Mbstring
+  - Tokenizer
+  - XML
+  - Ctype
+  - JSON
 
 ## Installation
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-repo/fleetcart.git
-    cd fleetcart
-    ```
+### Step 1: Extract and Upload
 
-2. **Install dependencies:**
-    ```bash
-    composer install
-    npm install
-    ```
+1. Unzip the downloaded archive package.
+2. Rename the `FleetCart` directory to your desired directory name.
+3. Upload the directory to your web server through FTP or Control Panel.
 
-3. **Copy the `.env.example` file to `.env` and configure your environment variables:**
-    ```bash
-    cp .env.example .env
-    ```
+### Step 2: Creating Database
 
-4. **Generate the application key:**
-    ```bash
-    php artisan key:generate
-    ```
+1. Create a database for FleetCart through your server control panel.
+2. If your server has phpMyAdmin, you can also create a database using phpMyAdmin.
 
-5. **Run the migrations and seed the database:**
-    ```bash
-    php artisan migrate --seed
-    ```
+### Step 3: Run Installation Wizard
 
-6. **Build the front-end assets:**
-    ```bash
-    npm run dev
-    ```
+1. Go to your website address.
+2. Follow the installation wizard.
 
-7. **Start the development server:**
-    ```bash
-    php artisan serve
-    ```
+**Note:** You should configure your web server's document/web root to be the `public` directory.
+
+### Pre-Installation
+
+The pre-installation page checks if your server meets the requirements and has the correct directory permissions to set up FleetCart. Ensure that directories within the `storage` and the `bootstrap/cache` directories are writable by your web server.
+
+### Configuration
+
+Fill in the database connection details, administration details, and store details, then click the `Install` button to install FleetCart.
+
+### Complete
+
+After successfully installing FleetCart, you will see a success message. You now have the option to browse your online store or log into the administration panel.
 
 ## Admin Login
 
@@ -108,3 +109,10 @@ For support, please contact [EnvaySoft](https://codecanyon.net/user/envaysoft).
 ---
 
 © All Rights Reserved EnvaySoft
+
+## Screenshots
+
+![Installation Step 1](public/Documentation/1.png)
+![Installation Step 2](public/Documentation/2.png)
+![Installation Step 3](public/Documentation/3.png)
+![Installation Complete](public/Documentation/4.png)
