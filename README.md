@@ -156,6 +156,12 @@ For support, please contact [EnvaySoft](https://codecanyon.net/user/envaysoft).
 © All Rights Reserved EnvaySoft
 
 ## Screenshots
+## 📞 Contact Me
+<div align="center">
+    <a href="https://www.linkedin.com/in/hesam-ahmadpour" style="color: red; font-size: 20px; text-decoration: none;">LinkedIn</a> |
+    <a href="https://t.me/morpheusadam" style="color: red; font-size: 20px; text-decoration: none;">Telegram</a>
+</div>
+
 
 ![Installation Step 1](public/Documentation/1.png)
 ![Installation Step 2](public/Documentation/2.png)
