@@ -5,11 +5,11 @@
 ### A powerful, feature-rich **Laravel eCommerce CMS** for building and managing an online store — multi-language, multi-currency, modular architecture, PWA-ready, with a beautiful and powerful admin panel.
 
 <p>
-  <img src="https://img.shields.io/github/license/morpheusadam/laravel-shop-generator?style=for-the-badge&color=4c1" alt="License" />
-  <img src="https://img.shields.io/github/stars/morpheusadam/laravel-shop-generator?style=for-the-badge&color=ffca28" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/morpheusadam/laravel-shop-generator?style=for-the-badge&color=42a5f5" alt="Forks" />
-  <img src="https://img.shields.io/github/last-commit/morpheusadam/laravel-shop-generator?style=for-the-badge&color=8e44ad" alt="Last commit" />
-  <img src="https://img.shields.io/github/repo-size/morpheusadam/laravel-shop-generator?style=for-the-badge&color=e67e22" alt="Repo size" />
+  <img src="https://img.shields.io/github/license/morpheusadam/ShopSmith?style=for-the-badge&color=4c1" alt="License" />
+  <img src="https://img.shields.io/github/stars/morpheusadam/ShopSmith?style=for-the-badge&color=ffca28" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/morpheusadam/ShopSmith?style=for-the-badge&color=42a5f5" alt="Forks" />
+  <img src="https://img.shields.io/github/last-commit/morpheusadam/ShopSmith?style=for-the-badge&color=8e44ad" alt="Last commit" />
+  <img src="https://img.shields.io/github/repo-size/morpheusadam/ShopSmith?style=for-the-badge&color=e67e22" alt="Repo size" />
 </p>
 
 <p>
@@ -91,7 +91,7 @@ It's ideal for **store owners, agencies, and developers** who want a customizabl
 
 ```bash
 # 1. Get the code
-git clone https://github.com/morpheusadam/laravel-shop-generator.git
+git clone https://github.com/morpheusadam/ShopSmith.git
 cd laravel-shop-generator
 
 # 2. Install dependencies
@@ -149,7 +149,7 @@ laravel-shop-generator/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Open an [issue](https://github.com/morpheusadam/laravel-shop-generator/issues) or submit a pull request with new features, fixes, or improvements.
+Contributions are welcome! Open an [issue](https://github.com/morpheusadam/ShopSmith/issues) or submit a pull request with new features, fixes, or improvements.
 
 ## 📜 License
 
