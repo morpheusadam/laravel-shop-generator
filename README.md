@@ -1,7 +1,5 @@
 <div align="center">
-
-# 🏬 Laravel Shop Generator
-
+# 🏬 Shop Smith
 ### A powerful, feature-rich **Laravel eCommerce CMS** for building and managing an online store — multi-language, multi-currency, modular architecture, PWA-ready, with a beautiful and powerful admin panel.
 
 <p>
